@@ -71,7 +71,8 @@ public class NewSubscriptionWithoutPaymentTest {
 
         WebElement aiAlesAbonamentCuPlataInFiecareLunaMessage = driver.findElement
                 (By.xpath("//h5[contains(@class,'styles_typography__wu9wz') and contains(@class,'styles_center__U8G5d')]"));
-        Assert.assertTrue(aiAlesAbonamentCuPlataInFiecareLunaMessage.isDisplayed(), "Elementul 'Ai ales abonament cu plata in fiecare luna' nu este vizibil!");
+        Assert.assertTrue(aiAlesAbonamentCuPlataInFiecareLunaMessage.isDisplayed(),
+                "Elementul 'Ai ales abonament cu plata in fiecare luna' nu este vizibil!");
         System.out.println("Element găsit: " + aiAlesAbonamentCuPlataInFiecareLunaMessage.getText());
 
         WebElement confirmaButton = driver.findElement(By.xpath("//button[text()='Confirma']"));
