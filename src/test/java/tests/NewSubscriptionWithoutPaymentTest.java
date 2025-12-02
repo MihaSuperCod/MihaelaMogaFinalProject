@@ -86,6 +86,7 @@ public class NewSubscriptionWithoutPaymentTest {
 
         String expectedStart = "https://checkout.stripe.com/";
         String actualPage = driver.getCurrentUrl();
+        System.out.println("Verific URL: " + actualPage);
         Assert.assertTrue(
                 actualPage.startsWith(expectedStart),
                 "URL-ul nu începe cu partea statică! Actual: " + actualPage
