@@ -71,7 +71,7 @@ public class AddNewDoctor {
         WebElement saveButton = driver.findElement(By.xpath("//button[text()='Salveaza']"));
         saveButton.click();
 
-        String expectedStart = "https://app.dentops.ro/clients";
+        String expectedPage = "https://app.dentops.ro/clients";
         String actualPage = driver.getCurrentUrl();
         System.out.println("Verific URL: " + actualPage);
 }}
