@@ -44,7 +44,7 @@ public class NewSubscriptionWithoutPaymentTest {
 
         WebElement abonamentLunarCard = driver.findElement
                 (By.xpath("//div[.//h4[contains(text(),'Abonament Lunar')] "
-                + "and .//h3[contains(text(),'150 RON')]]"));
+                        + "and .//h3[contains(text(),'150 RON')]]"));
 
         System.out.println("Card gasit: " +
                 abonamentLunarCard.findElement(By.xpath(".//h4")).getText() + " - " +
