@@ -5,12 +5,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 
-public class ClientModel {
+public class UserModel {
     private String emailFieldValue;
     private String passwordFieldValue;
     private String invalidPasswordFieldValue;
 
-    public ClientModel(String filePath){
+    public UserModel(String filePath){
         loadFromJson(filePath);
     }
 

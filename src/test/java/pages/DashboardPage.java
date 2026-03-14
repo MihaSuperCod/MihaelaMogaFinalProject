@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -64,7 +63,7 @@ public class DashboardPage extends BasePage {
         LogUtility.infoLog("The user is disconnected from the account");
     }
 
-    public void addNewDoctor(){
+    public void addNewDoctorStep(){
         waitAndClick(colaboratorsElement);
         LogUtility.infoLog("The user clicked on the colaborators button and accessed the client page");
     }

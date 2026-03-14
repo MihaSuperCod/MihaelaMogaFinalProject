@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f74e1796-1fdd-433e-abed-6464ba3bbf77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/ClientModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AuthenticationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sharedData/SharedData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/AllureAppender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/LogUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ClientData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ClientInvalidData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/DoctorModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/DoctorData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/ClientModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AuthenticationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AuthenticationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ClientPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewDoctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginWithInvalidPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginWithInvalidPassTest.java" afterDir="false" />
@@ -60,27 +53,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.AddNewDoctor.AddNewDoctorTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.logInTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginWithInvalidPassTest.logInWithInvalidPassTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LogoutTest.logOutTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.36666667&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.AddNewDoctor.AddNewDoctorTest.executor": "Run",
+    "TestNG.AddNewDoctor.addNewDoctorTest.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.logInTest.executor": "Run",
+    "TestNG.LoginWithInvalidPassTest.logInWithInvalidPassTest.executor": "Run",
+    "TestNG.LogoutTest.logOutTest.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.36666667",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.LoginTest.logInTest">
-    <configuration name="AddNewDoctor.AddNewDoctorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="TestNG.AddNewDoctorTest.addNewDoctorTest">
+    <configuration name="AddNewDoctorTest.addNewDoctorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MihaelaMogaFinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AddNewDoctorTest" />
+      <option name="METHOD_NAME" value="addNewDoctorTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddNewDoctor.addNewDoctorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MihaelaMogaFinalProject" />
       <extension name="coverage">
         <pattern>
@@ -90,25 +102,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AddNewDoctor" />
-      <option name="METHOD_NAME" value="AddNewDoctorTest" />
+      <option name="METHOD_NAME" value="addNewDoctorTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MihaelaMogaFinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -171,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddNewDoctorTest.addNewDoctorTest" />
+        <item itemvalue="TestNG.AddNewDoctor.addNewDoctorTest" />
         <item itemvalue="TestNG.LoginTest.logInTest" />
         <item itemvalue="TestNG.LoginWithInvalidPassTest.logInWithInvalidPassTest" />
         <item itemvalue="TestNG.LogoutTest.logOutTest" />
-        <item itemvalue="TestNG.AddNewDoctor.AddNewDoctorTest" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -188,16 +183,5 @@
       <updated>1772904020253</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/utils/LogUtility.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

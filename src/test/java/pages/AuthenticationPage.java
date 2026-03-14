@@ -1,6 +1,6 @@
 package pages;
 
-import models.ClientModel;
+import models.UserModel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,12 +28,12 @@ public class AuthenticationPage extends BasePage {
         super(driver);
     }
 
-    public void validAuthenticationProcess(ClientModel testData){
-        emailFieldValue.sendKeys(testData.getEmailFieldValue());
-        LogUtility.infoLog("The user fills email address field with value: " + testData.getEmailFieldValue());
+    public void validAuthenticationProcess(UserModel userData){
+        emailFieldValue.sendKeys(userData.getEmailFieldValue());
+        LogUtility.infoLog("The user fills email address field with value: " + userData.getEmailFieldValue());
 
-        passwordFieldValue.sendKeys(testData.getPasswordFieldValue());
-        LogUtility.infoLog("The user fills password field with value: " + testData.getPasswordFieldValue());
+        passwordFieldValue.sendKeys(userData.getPasswordFieldValue());
+        LogUtility.infoLog("The user fills password field with value: " + userData.getPasswordFieldValue());
 
         submitButton.click();
         LogUtility.infoLog("The user clicked on the submit button");
@@ -44,7 +44,7 @@ public class AuthenticationPage extends BasePage {
         LogUtility.infoLog("User successfully logged in and navigated to the dashboard page");
         }
 
-    public void invalidAuthenticationProcess(ClientModel testData){
+    public void invalidAuthenticationProcess(UserModel testData){
         emailFieldValue.sendKeys(testData.getEmailFieldValue());
         LogUtility.infoLog("The user fills email address field with value: " + testData.getEmailFieldValue());
 

@@ -1,6 +1,6 @@
 package tests;
 
-import models.ClientModel;
+import models.UserModel;
 import org.testng.annotations.Test;
 import pages.AuthenticationPage;
 import pages.DashboardPage;
@@ -11,7 +11,7 @@ public class LogoutTest extends SharedData {
 
     @Test
     public void logOutTest() {
-        ClientModel testData = new ClientModel("src/test/resources/ClientData.json");
+        UserModel testData = new UserModel("src/test/resources/ClientData.json");
 
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.LoginButton();
