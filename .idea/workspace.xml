@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f74e1796-1fdd-433e-abed-6464ba3bbf77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/DoctorModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/DoctorData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SettingsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/ClientModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AuthenticationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AuthenticationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ClientPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewDoctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginWithInvalidPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginWithInvalidPassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/NewSubscriptionWithoutPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NewSubscriptionWithoutPaymentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +55,13 @@
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.AddNewDoctor.AddNewDoctorTest.executor": "Run",
     "TestNG.AddNewDoctor.addNewDoctorTest.executor": "Run",
+    "TestNG.AddNewDoctorTest.addNewDoctorTest.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
     "TestNG.LoginTest.logInTest.executor": "Run",
     "TestNG.LoginWithInvalidPassTest.logInWithInvalidPassTest.executor": "Run",
     "TestNG.LogoutTest.logOutTest.executor": "Run",
+    "TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionTest.executor": "Run",
+    "TestNG.newSubscriptionWithoutPaymentTest.newSubscriptionTest.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "SDKs",
@@ -73,7 +70,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.AddNewDoctorTest.addNewDoctorTest">
+  <component name="RunManager" selected="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionTest">
     <configuration name="AddNewDoctorTest.addNewDoctorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MihaelaMogaFinalProject" />
       <extension name="coverage">
@@ -128,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginWithInvalidPassTest.logInWithInvalidPassTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NewSubscriptionWithoutPaymentTest.newSubscriptionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MihaelaMogaFinalProject" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +134,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginWithInvalidPassTest" />
-      <option name="METHOD_NAME" value="logInWithInvalidPassTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.NewSubscriptionWithoutPaymentTest" />
+      <option name="METHOD_NAME" value="newSubscriptionTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -146,7 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutTest.logOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="newSubscriptionWithoutPaymentTest.newSubscriptionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MihaelaMogaFinalProject" />
       <extension name="coverage">
         <pattern>
@@ -155,8 +152,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LogoutTest" />
-      <option name="METHOD_NAME" value="logOutTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.newSubscriptionWithoutPaymentTest" />
+      <option name="METHOD_NAME" value="newSubscriptionTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionTest" />
+        <item itemvalue="TestNG.newSubscriptionWithoutPaymentTest.newSubscriptionTest" />
         <item itemvalue="TestNG.AddNewDoctorTest.addNewDoctorTest" />
         <item itemvalue="TestNG.AddNewDoctor.addNewDoctorTest" />
         <item itemvalue="TestNG.LoginTest.logInTest" />
-        <item itemvalue="TestNG.LoginWithInvalidPassTest.logInWithInvalidPassTest" />
-        <item itemvalue="TestNG.LogoutTest.logOutTest" />
       </list>
     </recent_temporary>
   </component>

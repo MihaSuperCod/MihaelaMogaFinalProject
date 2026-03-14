@@ -32,6 +32,9 @@ public class DashboardPage extends BasePage {
     @FindBy(xpath = "//a[.//span[text()='Colaboratori']]")
     private WebElement colaboratorsElement;
 
+    @FindBy(linkText = "Aboneaza-te acum")
+    private WebElement getSubscriptionButton;
+
     public DashboardPage(WebDriver driver) {
         super(driver);
     }
@@ -67,4 +70,19 @@ public class DashboardPage extends BasePage {
         waitAndClick(colaboratorsElement);
         LogUtility.infoLog("The user clicked on the colaborators button and accessed the client page");
     }
-}
+
+    public void getSubscriptionStep(){
+        String actualButtonText = getSubscriptionButton.getText();
+        LogUtility.infoLog("Button text found: " + actualButtonText);
+
+        String expectedButtonText = "Aboneaza-te acum";
+        Assert.assertEquals(actualButtonText, expectedButtonText, "The button text is not correct!");
+        LogUtility.infoLog("Get Subscription button text validated successfully.");
+
+        waitAndClick(getSubscriptionButton);
+        LogUtility.infoLog("Get Subscription button clicked by the user.");
+
+        String actualUrl = driver.getCurrentUrl();
+        LogUtility.infoLog("Current URL after click: " + actualUrl);
+    }}
+
