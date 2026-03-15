@@ -11,7 +11,7 @@ import sharedData.SharedData;
 public class NewSubscriptionWithoutPaymentTest extends SharedData{
 
     @Test
-    public void newSubscriptionTest(){
+    public void newSubscriptionWithoutPaymentTest(){
         UserModel testData = new UserModel("src/test/resources/ClientData.json");
 
         LoginPage loginPage = new LoginPage(getDriver());

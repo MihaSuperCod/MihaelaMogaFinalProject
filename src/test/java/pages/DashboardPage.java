@@ -77,7 +77,7 @@ public class DashboardPage extends BasePage {
 
         String expectedButtonText = "Aboneaza-te acum";
         Assert.assertEquals(actualButtonText, expectedButtonText, "The button text is not correct!");
-        LogUtility.infoLog("Get Subscription button text validated successfully.");
+        LogUtility.infoLog("'Aboneaza-te acum' button text validated successfully.");
 
         waitAndClick(getSubscriptionButton);
         LogUtility.infoLog("Get Subscription button clicked by the user.");

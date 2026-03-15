@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f74e1796-1fdd-433e-abed-6464ba3bbf77" name="Changes" comment="" />
+    <list default="true" id="f74e1796-1fdd-433e-abed-6464ba3bbf77" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/NewSubscriptionWithoutPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NewSubscriptionWithoutPaymentTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,16 +58,24 @@
     "TestNG.LoginWithInvalidPassTest.logInWithInvalidPassTest.executor": "Run",
     "TestNG.LogoutTest.logOutTest.executor": "Run",
     "TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionTest.executor": "Run",
+    "TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionWithoutPaymentTest.executor": "Run",
     "TestNG.newSubscriptionWithoutPaymentTest.newSubscriptionTest.executor": "Run",
+    "TestNG.tests.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/USER/IdeaProjects/MihaelaMogaFinalProject",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.36666667",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionTest">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\IdeaProjects\MihaelaMogaFinalProject" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionWithoutPaymentTest">
     <configuration name="AddNewDoctorTest.addNewDoctorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MihaelaMogaFinalProject" />
       <extension name="coverage">
@@ -75,42 +87,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AddNewDoctorTest" />
       <option name="METHOD_NAME" value="addNewDoctorTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddNewDoctor.addNewDoctorTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MihaelaMogaFinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AddNewDoctor" />
-      <option name="METHOD_NAME" value="addNewDoctorTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.logInTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MihaelaMogaFinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="logInTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,6 +112,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NewSubscriptionWithoutPaymentTest.newSubscriptionWithoutPaymentTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MihaelaMogaFinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.NewSubscriptionWithoutPaymentTest" />
+      <option name="METHOD_NAME" value="newSubscriptionWithoutPaymentTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="newSubscriptionWithoutPaymentTest.newSubscriptionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MihaelaMogaFinalProject" />
       <extension name="coverage">
@@ -154,13 +148,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MihaelaMogaFinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionWithoutPaymentTest" />
+        <item itemvalue="TestNG.tests" />
         <item itemvalue="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionTest" />
         <item itemvalue="TestNG.newSubscriptionWithoutPaymentTest.newSubscriptionTest" />
         <item itemvalue="TestNG.AddNewDoctorTest.addNewDoctorTest" />
-        <item itemvalue="TestNG.AddNewDoctor.addNewDoctorTest" />
-        <item itemvalue="TestNG.LoginTest.logInTest" />
       </list>
     </recent_temporary>
   </component>
