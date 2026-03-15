@@ -1,8 +1,6 @@
 package tests;
 
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import models.UserModel;
 import org.testng.annotations.Test;
 import pages.AuthenticationPage;
@@ -14,6 +12,8 @@ public class LoginTest extends SharedData{
     @Epic("Authentication Module")
     @Feature("User Login")
     @Story("User logs in with valid credentials")
+    @Description("Verify that a registered user can successfully log into the application using valid email and password.")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     public void logInTest(){
         UserModel testData = new UserModel("src/test/resources/ClientData.json");

@@ -1,8 +1,6 @@
 package tests;
 
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import models.UserModel;
 import org.testng.annotations.Test;
 import pages.AuthenticationPage;
@@ -15,6 +13,8 @@ public class LogoutTest extends SharedData {
     @Epic("Authentication Module")
     @Feature("User Logout")
     @Story("User logs out from the application")
+    @Description("Verify that a logged-in user can successfully log out from the application and is redirected to the login page.")
+    @Severity(SeverityLevel.NORMAL)
     @Test
     public void logOutTest() {
         UserModel testData = new UserModel("src/test/resources/ClientData.json");

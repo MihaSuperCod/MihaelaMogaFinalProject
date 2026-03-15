@@ -1,8 +1,6 @@
 package tests;
 
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import models.UserModel;
 import org.testng.annotations.Test;
 import pages.AuthenticationPage;
@@ -14,6 +12,8 @@ public class LoginWithInvalidPassTest extends SharedData {
     @Epic("Authentication Module")
     @Feature("User Login")
     @Story("User cannot log in with invalid password")
+    @Description("Verify that the system displays an error message and prevents login when the user enters an incorrect password.")
+    @Severity(SeverityLevel.NORMAL)
     @Test
     public void logInWithInvalidPassTest(){
         UserModel testData = new UserModel("src/test/resources/ClientInvalidData.json");

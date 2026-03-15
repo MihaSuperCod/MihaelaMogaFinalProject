@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f74e1796-1fdd-433e-abed-6464ba3bbf77" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/NewCasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewDoctorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewDoctorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginWithInvalidPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginWithInvalidPassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/NewSubscriptionWithoutPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NewSubscriptionWithoutPaymentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "TestNG.AddNewCaseTest.addNewCaseTest.executor": "Run",
     "TestNG.AddNewDoctor.AddNewDoctorTest.executor": "Run",
     "TestNG.AddNewDoctor.addNewDoctorTest.executor": "Run",
     "TestNG.AddNewDoctorTest.addNewDoctorTest.executor": "Run",
@@ -75,8 +84,8 @@
       <recent name="C:\Users\USER\IdeaProjects\MihaelaMogaFinalProject" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionWithoutPaymentTest">
-    <configuration name="AddNewDoctorTest.addNewDoctorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AddNewCaseTest.addNewCaseTest">
+    <configuration name="AddNewCaseTest.addNewCaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MihaelaMogaFinalProject" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +94,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AddNewDoctorTest" />
-      <option name="METHOD_NAME" value="addNewDoctorTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.AddNewCaseTest" />
+      <option name="METHOD_NAME" value="addNewCaseTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddNewCaseTest.addNewCaseTest" />
         <item itemvalue="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionWithoutPaymentTest" />
         <item itemvalue="TestNG.tests" />
         <item itemvalue="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionTest" />
         <item itemvalue="TestNG.newSubscriptionWithoutPaymentTest.newSubscriptionTest" />
-        <item itemvalue="TestNG.AddNewDoctorTest.addNewDoctorTest" />
       </list>
     </recent_temporary>
   </component>

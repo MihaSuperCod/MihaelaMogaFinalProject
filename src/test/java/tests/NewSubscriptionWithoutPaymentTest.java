@@ -1,8 +1,6 @@
 package tests;
 
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import models.UserModel;
 import org.testng.annotations.Test;
 import pages.AuthenticationPage;
@@ -16,6 +14,8 @@ public class NewSubscriptionWithoutPaymentTest extends SharedData{
     @Epic("Subscription Module")
     @Feature("Create Subscription")
     @Story("User creates subscription without payment")
+    @Description("Verify that the system prevents creating a subscription when the payment step is skipped or not completed.")
+    @Severity(SeverityLevel.NORMAL)
     @Test
     public void newSubscriptionWithoutPaymentTest(){
         UserModel testData = new UserModel("src/test/resources/ClientData.json");

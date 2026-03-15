@@ -1,8 +1,6 @@
 package tests;
 
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import models.UserModel;
 import models.DoctorModel;
 import org.testng.annotations.Test;
@@ -17,6 +15,8 @@ public class AddNewDoctorTest extends SharedData {
     @Epic("Doctor Management Module")
     @Feature("Add Doctor")
     @Story("Admin adds a new doctor to the system")
+    @Description("Verify that an administrator can add a new doctor by completing the required fields in the doctor creation form.")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     public void addNewDoctorTest(){
         UserModel userData = new UserModel("src/test/resources/ClientData.json");

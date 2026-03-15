@@ -35,6 +35,9 @@ public class DashboardPage extends BasePage {
     @FindBy(linkText = "Aboneaza-te acum")
     private WebElement getSubscriptionButton;
 
+    @FindBy(xpath = "//a[@href='/new-case' and .//span[contains(text(),'Adaugă')]]")
+    private WebElement addNewCaseButton;
+
     public DashboardPage(WebDriver driver) {
         super(driver);
     }
@@ -71,7 +74,7 @@ public class DashboardPage extends BasePage {
         LogUtility.infoLog("The user clicked on the colaborators button and accessed the client page");
     }
 
-    public void getSubscriptionStep(){
+    public void getSubscriptionStep() {
         String actualButtonText = getSubscriptionButton.getText();
         LogUtility.infoLog("Button text found: " + actualButtonText);
 
@@ -84,5 +87,13 @@ public class DashboardPage extends BasePage {
 
         String actualUrl = driver.getCurrentUrl();
         LogUtility.infoLog("Current URL after click: " + actualUrl);
-    }}
+    }
+
+        public void addNewCaseStep(){
+        waitAndClick(addNewCaseButton);
+        LogUtility.infoLog("The user clicked on the addNewCase button");
+    }
+}
+
+
 
