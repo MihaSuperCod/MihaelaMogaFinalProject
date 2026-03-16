@@ -22,12 +22,15 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+
       - name: Run automation tests
-        run: mvn clean install -Dallure.results.directory=target/allure-results
+        run: mvn clean install -Dheadless=true
 
       - name: Generate test results
         if: always()
-        run: mvn allure:report -Dallure.results.directory=target/allure-results
+        run: mvn allure:report
 
       - name: Publish test results
         if: always()
