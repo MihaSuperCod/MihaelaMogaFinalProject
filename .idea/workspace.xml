@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f74e1796-1fdd-433e-abed-6464ba3bbf77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/NewCasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-results/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/allure.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewDoctorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewDoctorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginWithInvalidPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginWithInvalidPassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/NewSubscriptionWithoutPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NewSubscriptionWithoutPaymentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LogOutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +56,7 @@
     "TestNG.AddNewDoctor.AddNewDoctorTest.executor": "Run",
     "TestNG.AddNewDoctor.addNewDoctorTest.executor": "Run",
     "TestNG.AddNewDoctorTest.addNewDoctorTest.executor": "Run",
+    "TestNG.LogOutTest.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
     "TestNG.LoginTest.logInTest.executor": "Run",
     "TestNG.LoginWithInvalidPassTest.logInWithInvalidPassTest.executor": "Run",
@@ -84,7 +79,7 @@
       <recent name="C:\Users\USER\IdeaProjects\MihaelaMogaFinalProject" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddNewCaseTest.addNewCaseTest">
+  <component name="RunManager" selected="TestNG.NewSubscriptionWithoutPaymentTest">
     <configuration name="AddNewCaseTest.addNewCaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MihaelaMogaFinalProject" />
       <extension name="coverage">
@@ -103,7 +98,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewSubscriptionWithoutPaymentTest.newSubscriptionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogOutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MihaelaMogaFinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LogOutTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewSubscriptionWithoutPaymentTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MihaelaMogaFinalProject" />
       <extension name="coverage">
         <pattern>
@@ -113,8 +125,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.NewSubscriptionWithoutPaymentTest" />
-      <option name="METHOD_NAME" value="newSubscriptionTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -132,24 +143,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.NewSubscriptionWithoutPaymentTest" />
       <option name="METHOD_NAME" value="newSubscriptionWithoutPaymentTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="newSubscriptionWithoutPaymentTest.newSubscriptionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MihaelaMogaFinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.newSubscriptionWithoutPaymentTest" />
-      <option name="METHOD_NAME" value="newSubscriptionTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -175,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddNewCaseTest.addNewCaseTest" />
+        <item itemvalue="TestNG.NewSubscriptionWithoutPaymentTest" />
+        <item itemvalue="TestNG.LogOutTest" />
         <item itemvalue="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionWithoutPaymentTest" />
+        <item itemvalue="TestNG.AddNewCaseTest.addNewCaseTest" />
         <item itemvalue="TestNG.tests" />
-        <item itemvalue="TestNG.NewSubscriptionWithoutPaymentTest.newSubscriptionTest" />
-        <item itemvalue="TestNG.newSubscriptionWithoutPaymentTest.newSubscriptionTest" />
       </list>
     </recent_temporary>
   </component>

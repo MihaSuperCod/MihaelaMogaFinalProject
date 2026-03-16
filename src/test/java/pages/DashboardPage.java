@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,37 +36,34 @@ public class DashboardPage extends BasePage {
     @FindBy(linkText = "Aboneaza-te acum")
     private WebElement getSubscriptionButton;
 
-    @FindBy(xpath = "//a[@href='/new-case' and .//span[contains(text(),'Adaugă')]]")
+    @FindBy(xpath = "//a[@href='/new-case']")
     private WebElement addNewCaseButton;
+
 
     public DashboardPage(WebDriver driver) {
         super(driver);
     }
 
     public void logOutProcess(){
-        disconnectButton.click();;
         LogUtility.infoLog("The user clicked on the disconnect button");
+        waitAndClick(disconnectButton);
 
         LogUtility.infoLog("Checking the logout confirmation message");
-
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOf(messageParagraph));
 
         String actualText = messageParagraph.getText();
         LogUtility.infoLog("Logout message displayed: " + actualText);
 
-        actualText = messageParagraph.getText();
-        if(actualText.contains("Ai ales sa fii deconectat")) {
-            System.out.println("Mesajul este afișat corect!");
-        } else {
-            System.out.println("Mesajul este diferit!");
-        }
+        Assert.assertTrue(actualText.contains("Ai ales sa fii deconectat"),
+                "Mesajul de logout este incorect: " + actualText);
 
+        LogUtility.infoLog("The user clicked on the continue button");
         waitAndClick(continueButton);
+
         String expectedURL = "https://app.dentops.ro/login";
         String actualURL = driver.getCurrentUrl();
-        Assert.assertEquals(actualURL,expectedURL, "Nu sunt pe pagina de setari");
-        LogUtility.infoLog("The user clicked on the continue button");
+        Assert.assertEquals(actualURL, expectedURL, "Nu s-a ajuns pe pagina de login");
         LogUtility.infoLog("The user is disconnected from the account");
     }
 
@@ -82,6 +80,7 @@ public class DashboardPage extends BasePage {
         Assert.assertEquals(actualButtonText, expectedButtonText, "The button text is not correct!");
         LogUtility.infoLog("'Aboneaza-te acum' button text validated successfully.");
 
+
         waitAndClick(getSubscriptionButton);
         LogUtility.infoLog("Get Subscription button clicked by the user.");
 
@@ -90,10 +89,18 @@ public class DashboardPage extends BasePage {
     }
 
         public void addNewCaseStep(){
-        waitAndClick(addNewCaseButton);
-        LogUtility.infoLog("The user clicked on the addNewCase button");
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+            wait.until(ExpectedConditions.visibilityOf(addNewCaseButton));
+
+            Assert.assertTrue(addNewCaseButton.isDisplayed(), "Add New Case button is not visible!");
+            LogUtility.infoLog("Add New Case button is visible");
+
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", addNewCaseButton);
+            LogUtility.infoLog("The user clicked on the Add New Case button");
+        }
     }
-}
+
+
 
 
 

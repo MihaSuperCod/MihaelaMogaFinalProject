@@ -8,7 +8,7 @@ import pages.DashboardPage;
 import pages.LoginPage;
 import sharedData.SharedData;
 
-public class LogoutTest extends SharedData {
+public class LogOutTest extends SharedData {
 
     @Epic("Authentication Module")
     @Feature("User Logout")

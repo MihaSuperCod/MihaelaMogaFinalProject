@@ -1,6 +1,7 @@
 package pages;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -19,14 +20,22 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public void waitAndClick(WebElement element){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        Objects.requireNonNull(wait.until(ExpectedConditions.elementToBeClickable(element))).click();
+    public void waitAndClick(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        try {
+            element.click();
+        } catch (ElementClickInterceptedException e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            element.click();
+        }
+
     }
 
-    public WebElement waitForElementToBeVisible(WebElement element, int timeoutInSeconds) {
+    public void waitForElementToBeVisible(WebElement element, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
-        return wait.until(ExpectedConditions.visibilityOf(element));
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
 
 }
