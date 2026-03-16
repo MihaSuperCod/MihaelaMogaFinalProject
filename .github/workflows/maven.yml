@@ -1,6 +1,10 @@
 name: Regression pipeline
 
 on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -19,15 +23,15 @@ jobs:
           cache: maven
 
       - name: Run automation tests
-        run: mvn clean install
+        run: mvn clean install -Dallure.results.directory=target/allure-results
 
       - name: Generate test results
         if: always()
-        run: mvn allure:report
+        run: mvn allure:report -Dallure.results.directory=target/allure-results
 
       - name: Publish test results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: target-folder
+          name: allure-report
           path: target/allure-report
