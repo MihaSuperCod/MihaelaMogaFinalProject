@@ -1,5 +1,7 @@
 package tests;
 
+import dataBase.CasesTable;
+import dataBase.DoctorTable;
 import io.qameta.allure.*;
 import models.UserModel;
 import models.DoctorModel;
@@ -33,4 +35,7 @@ public class AddNewDoctorTest extends SharedData {
 
         ClientPage clientPage = new ClientPage(getDriver());
         clientPage.AddNewDoctorProcess(doctorData);
+
+        DoctorTable doctorTable = new DoctorTable();
+        doctorTable.insertDoctorIntoTable(doctorData);
 }}

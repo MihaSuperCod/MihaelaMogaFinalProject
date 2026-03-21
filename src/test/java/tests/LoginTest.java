@@ -1,5 +1,6 @@
 package tests;
 
+import dataBase.ClientTable;
 import io.qameta.allure.*;
 import models.UserModel;
 import org.testng.annotations.Test;
@@ -23,5 +24,8 @@ public class LoginTest extends SharedData{
 
         AuthenticationPage authenticationPage = new AuthenticationPage(getDriver());
         authenticationPage.validAuthenticationProcess(testData);
+
+        ClientTable clientTable = new ClientTable();
+        clientTable.insertClientIntoTable(testData);
     }
 }

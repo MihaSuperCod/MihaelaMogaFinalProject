@@ -1,6 +1,8 @@
 package tests;
 
+import dataBase.CasesTable;
 import io.qameta.allure.*;
+import models.CaseModel;
 import models.UserModel;
 import org.testng.annotations.Test;
 import pages.AuthenticationPage;
@@ -19,6 +21,7 @@ public class AddNewCaseTest extends SharedData {
     @Test
     public void addNewCaseTest(){
         UserModel testData = new UserModel("src/test/resources/ClientData.json");
+        CaseModel caseData = new CaseModel("src/test/resources/CaseData.json");
 
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.LoginButton();
@@ -31,5 +34,8 @@ public class AddNewCaseTest extends SharedData {
 
         NewCasePage newCasePage = new NewCasePage(getDriver());
         newCasePage.addNewCaseProcess();
+
+        CasesTable casesTable = new CasesTable();
+        casesTable.insertCasesIntoTable(caseData);
     }
 }
